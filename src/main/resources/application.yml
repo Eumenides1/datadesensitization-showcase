@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ENC(mQlsJR4Tk5J3yHKicFL8euFrDfv1MSKVcSuZNVCom0eQ70pgFvWEs9WTrvwu0vOjcAHKkukLatRira6STAicf/CgQhk0DUfZ1u5MBrqo9POQjjewT+Dk+aiS8UXuQ1p4HPTWN1CEW7he9udpgxSaq2b5Pza6MR+KMO86h+dbWi/scszlqfl6xp7ZtCUFdS4NSd2ddewSMRpUhH7zlvFEEFHxW9P2fcM+5fFlGYetBvHJM5cSpLBblxacM7zk691i4zG01QDlzDLMuyynzZq7VsvcxwMdlYBysB5eXOmWgf1pj2AjGcNQScIe0pDZcqFoBUHciNmXwBdnxC5+ox+9fw==)
+    username: ENC(ynZv2S1+PfC0t1AW1eerzjhXYA3f4TdJH1x1pHl9D6vusA75IHx8vqYZ3cBQIM37)
+    password: ENC(0DsFFagTBQBkaiCg0SJ9lkwkKyjJYubm4D1yv78tX7q6lLixj10YxkVMVexJZxKC)
+    driver-class-name: com.mysql.jdbc.Driver
+jasypt:
+  encryptor:
+    password: rookiestackissocool

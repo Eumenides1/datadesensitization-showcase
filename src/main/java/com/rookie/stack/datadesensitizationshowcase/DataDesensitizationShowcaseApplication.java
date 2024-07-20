@@ -1,0 +1,33 @@
+package com.rookie.stack.datadesensitizationshowcase;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+@SpringBootApplication
+@EnableAspectJAutoProxy
+public class DataDesensitizationShowcaseApplication  {
+    // private static final Logger logger = LoggerFactory.getLogger(DataDesensitizationShowcaseApplication.class);
+    public static void main(String[] args) {
+        ConfigurableApplicationContext context = SpringApplication.run(DataDesensitizationShowcaseApplication.class, args);
+        DataSource dataSource = context.getBean(DataSource.class);
+        try (Connection connection = dataSource.getConnection()) {
+            System.out.println("数据库连接成功！");
+        } catch (SQLException e) {
+            System.out.println("数据库连接失败！");
+            e.printStackTrace();
+        }
+    }
+//    @Override
+//    public void run(String... args) throws Exception {
+//        logger.info("用户名: 张三, 身份证: 123456789012345678, 手机号: 13800138000, 地址: 北京市朝阳区幸福街123号");
+//    }
+}
